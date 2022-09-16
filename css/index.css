@@ -88,7 +88,7 @@ button {
 .header.white {
   background: white;
   color: black;
-  box-shadow: 0 -2px 8px #5557;
+  box-shadow: 0 -2px 8px rgba(85, 85, 85, 0.4666666667);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -238,7 +238,7 @@ button {
   display: flex;
 }
 .intro .description div {
-  background-color: #0009;
+  background-color: rgba(0, 0, 0, 0.6);
   display: inline-block;
   width: 3px;
   height: 100%;
@@ -276,7 +276,7 @@ button {
   font-size: 1rem;
 }
 .about p.description, .about span {
-  color: #0006;
+  color: rgba(0, 0, 0, 0.4);
 }
 .about .info {
   display: grid;
@@ -350,7 +350,7 @@ button {
 .resume .right .item {
   font-weight: bold;
   padding: 2rem 1rem 1rem;
-  border-bottom: 1px solid #0003;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .resume .right .item .year {
   color: #0084ff;
@@ -365,7 +365,7 @@ button {
   line-height: 1.8;
 }
 .resume .right .item p.description {
-  color: #0006;
+  color: rgba(0, 0, 0, 0.4);
   font-weight: 200;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -380,7 +380,7 @@ button {
   margin-bottom: 8px;
 }
 .resume .skills .container .bar {
-  background-color: #5552;
+  background-color: rgba(85, 85, 85, 0.1333333333);
   width: 100%;
   height: 0.7rem;
   position: relative;
@@ -494,7 +494,7 @@ button {
   margin-bottom: 2rem;
 }
 .services .subtitle, .projects .subtitle, .contact .subtitle {
-  color: #0006;
+  color: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 .services .list, .projects .list, .contact .list {
@@ -506,7 +506,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 3px 15px #3333;
+  box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
   color: #333;
   padding: 2rem 1rem;
   cursor: pointer;
@@ -538,7 +538,7 @@ button {
   margin-bottom: 2rem;
 }
 .services .list .item p.detail, .projects .list .item p.detail, .contact .list .item p.detail {
-  color: #0006;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 0.8rem;
   text-align: center;
 }
@@ -597,6 +597,7 @@ button {
 .projects .list .item {
   background-size: cover;
   background-blend-mode: color-burn;
+  background-position: center center;
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -609,7 +610,7 @@ button {
 .projects .list .item .background {
   height: 100%;
   width: 100%;
-  background-color: #0084ff;
+  background-color: #00294f;
   position: absolute;
   transition: 0.3s;
 }
@@ -617,7 +618,7 @@ button {
   background-color: inherit;
 }
 .projects .list .item:hover div {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .projects .list .item:hover h1, .projects .list .item:hover h2 {
   opacity: 1;
@@ -668,7 +669,7 @@ button {
   color: black;
 }
 .contact .list .item:hover p.detail {
-  color: #0006;
+  color: rgba(0, 0, 0, 0.4);
 }
 .contact .list .item h1 {
   font-size: 1.5rem;
@@ -697,7 +698,7 @@ button {
 
 .footer {
   background-color: black;
-  color: #fff7;
+  color: rgba(255, 255, 255, 0.4666666667);
   display: flex;
   flex-direction: column;
   justify-content: center;
