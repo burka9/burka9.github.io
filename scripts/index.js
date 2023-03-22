@@ -1,6 +1,9 @@
 const d = document
 const w = window
 
+const myPhoneNumber = '+251923798792'
+const myEmail = 'birukeph@gmail.com'
+
 function openInNewTab(href) {
   Object.assign(document.createElement('a'), {
     target: '_blank',
@@ -79,6 +82,7 @@ const description = ['Web Designer.', 'Developer.', 'Blogger.']
 let textCounter = 0
 let text_delay = 100
 let change_delay = 3500
+let first_change_delay = 1000
 
 const deleteText = () => {
 	let { length } = desc.innerHTML + 0
@@ -146,7 +150,7 @@ const loadEducation = () => {
 
 const experiences = [
 	{
-		year: 'Nov 2020 - Apr 2012',
+		year: 'Nov 2020 - Apr 2021',
 		title: 'Game Developer',
 		subtitle: 'Desert Rose Consultancy',
 		description: 'Digitalizing an existing game for use on as a web game. Integrating web server with a bot accessible from Telegram messaging platform.	Hosting and testing games online and on local networks.'
@@ -255,8 +259,10 @@ const loadServices = () => {
 
 
 const projects = [
-	{ photo: 'luna_home.png', title: 'Luna Group', type: 'Web Development', link: 'https://bot.netibconsult.com/' },
-	{ photo: 'yoni_movies.png', title: 'Yoni Entertainment', type: 'Web Development', link: 'https://yoni-movies.herokuapp.com/' },
+	{ photo: 'luna_home.png', title: 'Luna Group', type: 'Web Development', link: 'https://thelunagroups.com/' },
+	// { photo: 'yoni_movies.png', title: 'Yoni Entertainment', type: 'Web Development', link: 'https://yoni-movies.herokuapp.com/' },
+	{ photo: 'muntaha.png', title: 'Muntaha Foundation', type: 'Fullstack Web & Mobile App Development', link: 'https://www.muntahafoundation.org/' },
+	{ photo: 'promise.png', title: 'PromiseLandGeneration', type: 'Web Development', link: 'https://promiselandgeneration.com/' },
 	{ photo: 'filmia.png', title: 'Filmia', type: 'Game Development', link: 'http://filmia.herokuapp.com/' },
 ]
 
@@ -288,9 +294,17 @@ const loadProjects = () => {
 	})
 }
 
+const callPhone = () => {
+	window.location.href = `tel:${myPhoneNumber}`
+}
+
+const sendEmail = () => {
+	window.location.href = `mailto:${myEmail}`
+}
+
 w.onload = () => {
 	w.addEventListener('scroll', onscroll)
-	setTimeout(() => deleteText(), change_delay)
+	setTimeout(() => deleteText(), first_change_delay)
 	loadEducation()
 	loadExperience()
 	loadSkills()
